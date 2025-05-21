@@ -47,8 +47,8 @@ Step 2: Add the Following to .env
 env
 Copy
 Edit
-OPENAI_API_KEY=your_openai_api_key_here
-ASSISTANT_ID= your_existing_assistant_id_if_applicable
+OPENAI_API_KEY=your_openai_api_key_herea
+ASSISTANT_ID = asst_rSTovgGbHqf9p2pCvH990pa5
 Replace your_openai_api_key_here with your actual key from https://platform.openai.com/account/api-keys
 
 If you're letting the script create the assistant for you, you can remove or comment out the ASSISTANT_ID line.
