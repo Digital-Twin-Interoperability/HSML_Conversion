@@ -1,0 +1,11 @@
+{
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "role": "Software Engineer",
+  "department": "Engineering",
+  "employee_id": "EMP001",
+  "phone": "+1-555-0123",
+  "location": "San Francisco, CA",
+  "hire_date": "2023-01-15",
+  "skills": ["Python", "JavaScript", "React"]
+} 

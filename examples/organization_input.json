@@ -1,0 +1,19 @@
+{
+  "name": "TechCorp Solutions",
+  "type": "Technology Company",
+  "description": "Leading provider of 3D modeling and simulation solutions",
+  "website": "https://techcorp-solutions.com",
+  "email": "contact@techcorp-solutions.com",
+  "phone": "+1-555-0124",
+  "address": {
+    "street": "123 Innovation Drive",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94105",
+    "country": "USA"
+  },
+  "founded": "2018",
+  "employees": 250,
+  "industry": "Technology",
+  "specialties": ["3D Modeling", "Simulation", "AI", "VR"]
+} 

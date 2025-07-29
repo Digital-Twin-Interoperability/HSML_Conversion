@@ -1,0 +1,23 @@
+{
+  "name": "Lunar Rover",
+  "type": "3D Model",
+  "description": "A detailed 3D model of a lunar rover for simulation",
+  "model_url": "https://example.com/models/lunar-rover.obj",
+  "model_format": "OBJ",
+  "creator": "NASA",
+  "created_date": "2024-01-20",
+  "location": "Moon Surface",
+  "position": {
+    "x": 10.5,
+    "y": 25.3,
+    "z": 0.0
+  },
+  "rotation": {
+    "x": 0.0,
+    "y": 45.0,
+    "z": 0.0
+  },
+  "scale": 1.0,
+  "textures": ["rover_main.png", "rover_wheels.png"],
+  "polygon_count": 15000
+} 

@@ -1,0 +1,23 @@
+{
+  "name": "Satellite Dish",
+  "type": "Communication Equipment",
+  "description": "High-gain satellite communication dish",
+  "model": "SAT-5000",
+  "manufacturer": "SpaceTech Industries",
+  "serial_number": "STI-2024-001",
+  "location": "Ground Station Alpha",
+  "coordinates": {
+    "latitude": 37.7749,
+    "longitude": -122.4194,
+    "altitude": 100
+  },
+  "specifications": {
+    "diameter": "5.0m",
+    "frequency_range": "4-8 GHz",
+    "gain": "45 dB",
+    "weight": "2500 kg"
+  },
+  "status": "Operational",
+  "last_maintenance": "2024-01-15",
+  "next_maintenance": "2024-07-15"
+} 
