@@ -40,8 +40,23 @@ if "messages" not in st.session_state:
 @st.cache_resource
 def get_hsml_converter():
     try:
-        return HSMLConverter()
+        # Suppress print statements during initialization
+        import sys
+        from io import StringIO
+        
+        # Redirect stdout to suppress initialization messages
+        old_stdout = sys.stdout
+        sys.stdout = StringIO()
+        
+        converter = HSMLConverter()
+        
+        # Restore stdout
+        sys.stdout = old_stdout
+        
+        return converter
     except Exception as e:
+        # Restore stdout in case of error
+        sys.stdout = old_stdout
         st.error(f"Error initializing HSML Converter: {e}")
         return None
 
@@ -157,10 +172,14 @@ col1_btn, col2_btn, col3_btn = st.columns([1, 1, 1])
 with col1_btn:
     st.write("")  # Empty space
 with col2_btn:
-    send_button = st.button("Convert", type="primary", use_container_width=True)
-    if st.button("Clear Chat", type="secondary", use_container_width=True):
-        st.session_state.messages = []
-        st.rerun()
+    # Place buttons side by side with minimal gap
+    btn_col1, btn_col2 = st.columns([1, 1])
+    with btn_col1:
+        send_button = st.button("Convert", type="primary", use_container_width=True)
+    with btn_col2:
+        if st.button("Clear Chat", type="secondary", use_container_width=True):
+            st.session_state.messages = []
+            st.rerun()
 with col3_btn:
     st.write("")  # Empty space
 
